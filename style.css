@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+ 
+}
+.productCard{
+    height:350px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #e5e1e1;
+    padding:10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.productCard:hover{
+    box-shadow: 2px 2px 0px #f4f4bc;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+.card-img{
+    height:200px;
+    width:200px;
+}
+.title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+.price{
+    color:green;
+    font-size:20px;
+    padding-top:5px;
+}
+.productContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap:25px;
+    flex-wrap: wrap;
+    padding-right: 0px;
+    padding:20px 0px;
+}
+.buyContainer{
+    width: 100%;
+    display: flex;
+    padding:10px 0px 0px 0px ;
+ 
+    justify-content: space-between;
+}
+.add-to-cart{
+    padding:10px;
+    border:none;
+    background-color: rgb(192, 255, 65);
+    color:#000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wishList{
+    font-size:20px;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar{
+    background-color: #1d1919;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+.navbar h1{
+    color:#fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left:20px;
+}
+.navbar span{
+    color:#dfee10;
+}
+.list-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:30px;
+    color:#dfee10;
+    padding:10px;
+    list-style: none;
+    
+}
+.list-items li{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right:20px;
+    cursor: pointer;
+}
+
+.list-items .CartCount{
+    color:#ed2b2b;
+}
+.loadmore-cont{
+    text-align: center;
+    padding:20px;
+}
+
+.LoadMore{
+    padding:10px;
+    align-self: center;
+    background-color:#dfee10;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.LoadMore:hover{
+    background-color: aquamarine;
+}
+
+/* Home */
+.Home{
+    height:60vh;
+    background-color: #000000;
+    position: relative;
+}
+.Home ul{
+    list-style: none;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+   padding-top:13%;
+    gap:10%;
+}
+.Home ul li{
+    font-size:60px;
+    cursor: pointer;
+}
+/* .Home ul .li-4{
+    font-size: 200px;
+  
+} */
+/* .Home marquee{
+    color:#fff;
+    padding-top:7%;
+    font-size:40px;
+} */
+.Home ul li:nth-child(even){
+    color:#ed2b2b;
+    font-size: 80px;
+
+
+}
+
+/* .Home ul li:nth-child(4){
+    color:#bfe113;
+    font-size: 160px;
+    padding-bottom:200px;
+
+
+} */
+
+.Home ul li:hover{
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+    /* transform: scale(2); */
+    scale: 2;
+
+}
+.box1{
+    top:0px;
+    left:0px;
+    width:650px;
+    height:150px;
+    background-color: #dfee10;
+    position: absolute;
+
+}
+.box2{
+    top:67%;
+    right:0px;
+    height:150px;
+    width:650px;
+    background-color: #14e483;
+    position: absolute;
+    animation: box2 8s ease-in infinite;
+
+}
+.box3{
+    top:36%;
+    left:45%;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    background-color: #14e4da;
+    opacity: 0.5;
+    position: absolute;
+ 
+    /* animation: box2 8s ease-in infinite; */
+
+}
+
+@media(max-width:1400px){
+    .box3{
+        display:none;
+    }
+}
+@media(max-width:1160px){
+    .box1{
+        height:100px;
+    }
+    .box2{
+        height:100px;
+        top:78%;
+    }
+}
+@media(max-width:900px){
+    .Home ul{
+        
+        
+        display: flex;
+        justify-content: center;
+       padding-top:30%;
+       gap:20px;
+        
+    }
+    .Home ul li{
+        font-size:40px;
+        cursor: pointer;
+    }
+    .Home ul li:nth-child(even){
+        color:#ed2b2b;
+        font-size: 60px;
+    
+    
+    }
+    
+}
+
+@media(max-width:670px){
+    .box1{
+        height:100px;
+        width:90%;
+    }
+    .box2{
+        height:100px;
+        top:78%;
+        width:90%;
+    }
+
+}
+
+@media(max-width:504px){
+    .box1{
+        height:100px;
+        width:90%;
+    }
+    .box2{
+        height:100px;
+        top:78%;
+        width:90%;
+    }
+    .navbar{
+        font-size: 20px;
+    }
+    .list-items{
+        gap:10px;
+        padding-right: 1px;
+    }
+    .navbar h1{
+        font-size:25px;
+    }
+
+}
+
+
+.products-header h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:30px;
+    text-align: center;
+}
+/* 
+@keyframes box2 {
+    0%{
+        top:10px;
+    right:10px;
+
+    }
+    10%{
+        top:10px;
+    left:10px;
+
+    }
+    20%{
+        top:30%;
+        left:50%;
+
+    }
+    35%{
+        top:100px;
+    right:100px;
+
+    }
+
+    45%{
+        top:100px;
+        right:130px;
+
+    }
+    50%{
+
+        /* top:170px;
+    right:470px; */
+    /* }
+    75%{ */
+        /* top:10px;
+    right:10px; */
+
+    /* }
+    100%{ */
+        /* top:10px;
+    right:10px; */
+
+    /* }
+    
+}  */
